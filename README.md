@@ -1,2 +1,1 @@
-# PracticaGithubCine
-Aplicación de cine desplegada con Nginx y Docker
+ENTREGAR EL EN AULA VIRTUAL LOS DOS ALUMNOS EL ENLACE AL REPOSITORIO. DEBE SER PUBLICO
