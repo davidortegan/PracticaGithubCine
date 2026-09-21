@@ -1,9 +1,9 @@
 FROM nginx:alpine
 
+# Copiamos todos los archivos del directorio actual dentro del servidor Nginx
 COPY . /usr/share/nginx/html
 
-RUN sed -i 's/index index.html/index ventaentradas.html/' /etc/nginx/conf.d/default.conf
+# Renombramos ventaentradas.html a index.html para que Nginx lo cargue por defecto
+RUN mv /usr/share/nginx/html/ventaentradas.html /usr/share/nginx/html/index.html
 
 EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
